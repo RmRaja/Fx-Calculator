@@ -1,95 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="260.0" styleClass="body" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="175.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="7" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="175.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="8" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="175.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="9" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="235.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="4" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="235.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="5" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="235.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="6" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="295.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="1" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="295.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="2" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="295.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="3" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="355.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="0" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="355.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="." textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="355.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="=" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="175.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="/" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="235.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="*" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="295.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="-" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="355.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="+" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="115.0" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="CE" textFill="WHITE">
-         <font>
-            <Font name="Calibri" size="18.0" />
-         </font>
-      </JFXButton>
-   </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="260.0" styleClass="body" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="175.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="7" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="175.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="8" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="175.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="9" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="235.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="4" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="235.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="5" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="235.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="6" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="295.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="1" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="295.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="2" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="295.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="3" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="355.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="355.0" onAction="#handleNumberClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="." textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="355.0" onAction="#handleActionClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="=" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="175.0" onAction="#handleActionClickEvent" prefHeight="45.0" prefWidth="45.0" text="/" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+            <styleClass>
+                <String fx:value="btn" />
+                <String fx:value="btn-actions" />
+            </styleClass>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="235.0" onAction="#handleActionClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="*" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="295.0" onAction="#handleActionClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="-" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="355.0" onAction="#handleActionClickEvent" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="+" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="115.0" onAction="#resetCalculator" prefHeight="45.0" prefWidth="45.0" styleClass="btn" text="CE" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXTextField fx:id="resultText" alignment="BASELINE_RIGHT" editable="false" focusColor="WHITE" labelFloat="true" layoutX="19.0" layoutY="51.0" prefHeight="45.0" prefWidth="221.0" styleClass="result-text" text="0.00" unFocusColor="WHITE">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </JFXTextField>
+      <Label layoutX="85.0" layoutY="409.0" text="Made by RmRaja" textAlignment="CENTER" textFill="WHITE" />
+    </children>
 </Pane>

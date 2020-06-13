@@ -11,9 +11,9 @@
 }
 
 .btn-actions {
-
+    -fx-text-fill: #fff;
 }
 
-.result-label {
-
+.result-text {
+    -fx-text-fill: #fff;
 }
