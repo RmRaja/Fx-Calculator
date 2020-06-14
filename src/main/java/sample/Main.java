@@ -14,6 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("Java Calculator");
         primaryStage.setScene(new Scene(root, 255, 430));
         primaryStage.getScene().getStylesheets().add("/styles.css");
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

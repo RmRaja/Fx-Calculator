@@ -5,6 +5,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 
 import java.net.URL;
 import java.text.DecimalFormat;
@@ -24,7 +25,7 @@ public class Controller implements Initializable {
 
     @FXML
     private void handleNumberClickEvent(ActionEvent event) {
-        JFXButton button = (JFXButton) event.getSource();
+        Button button = (Button) event.getSource();
         String input = button.getText();
         if (this.operand == null) {
             if (this.x == null) {
@@ -45,7 +46,7 @@ public class Controller implements Initializable {
 
     @FXML
     private void handleActionClickEvent(ActionEvent event) {
-        JFXButton button = (JFXButton) event.getSource();
+        Button button = (Button) event.getSource();
         if (this.operand != null) {
             if (this.x != null && this.y != null) {
                 String calcResult = calculate();
