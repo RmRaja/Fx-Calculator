@@ -6,4 +6,3 @@
 <p align="center">
 <img src="JavaFxCalculator.gif"  />
 </p>  
-
